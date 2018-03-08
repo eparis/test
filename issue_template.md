@@ -1,29 +1,32 @@
-<!--
-Note that this is the issue tracker for OpenShift Origin.
+Issue tracker is **ONLY** used for reporting bugs. NO NEW FEATURE ACCEPTED! Use [stackoverflow](https://stackoverflow.com) for supporting issues.
 
-While we do track and fix bugs reported here, you will likely find better response times and less likelyhood of your bug report falling through the cracks if you file it in [Red Hat Bugzilla](https://bugzilla.redhat.com/enter_bug.cgi?product=OpenShift%20Container%20Platform)
+<!--- Provide a general summary of the issue in the Title above -->
 
-If you really would prefer to use github issues note that this may not be the right repo:
-OpenShift Installer issues should be reported at [OpenShift Ansible](https://github.com/openshift/openshift-ansible/issues)
-Management Console issues are collected at [OpenShift Web Console](https://github.com/openshift/origin-web-console/issues)
-Documentation issues are better reported at [OpenShift Docs](https://github.com/openshift/openshift-docs/issues)
--->
+## Expected Behavior
+<!--- Tell us what should happen -->
 
-[provide a description of the issue]
+## Current Behavior
+<!--- Tell us what happens instead of the expected behavior -->
 
-##### Version
-[provide output of the `openshift version` or `oc version` command]
+## Possible Solution
+<!--- Not obligatory, but suggest a fix/reason for the bug, -->
 
-##### Steps To Reproduce
-1. [step 1]
-2. [step 2]
+## Steps to Reproduce
+<!--- Provide a link to a live example, or an unambiguous set of steps to -->
+<!--- reproduce this bug. Include code to reproduce, if relevant -->
+1.
+2.
+3.
+4.
 
-##### Current Result
+## Context (Environment)
+<!--- How has this issue affected you? What are you trying to accomplish? -->
+<!--- Providing context helps us come up with a solution that is most useful in the real world -->
 
-##### Expected Result
+<!--- Provide a general summary of the issue in the Title above -->
 
-##### Additional Information
-[try to run `$ oc adm diagnostics` (or `oadm diagnostics`) command if possible]
-[if you are reporting issue related to builds, provide build logs with `BUILD_LOGLEVEL=5`]
-[consider attaching output of the `$ oc get all -o json -n <namespace>` command to the issue]
-[visit https://docs.openshift.org/latest/welcome/index.html]
+## Detailed Description
+<!--- Provide a detailed description of the change or addition you are proposing -->
+
+## Possible Implementation
+<!--- Not obligatory, but suggest an idea for implementing addition or change -->
