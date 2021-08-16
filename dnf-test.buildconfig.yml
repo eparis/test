@@ -15,6 +15,11 @@ spec:
     to:
       kind: ImageStreamTag
       name: 'dnf-test:latest'
+  resources:
+    limits:
+      cpu: '2'
+    requests:
+      cpu: '1'
   strategy:
     type: Docker
     dockerStrategy:
