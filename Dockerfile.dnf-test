@@ -1,7 +1,15 @@
-FROM registry.access.redhat.com/ubi8/ubi AS UBI
-RUN dnf update -y && dnf install -y git && dnf clean all
+#FROM registry.access.redhat.com/ubi8/ubi AS UBI
+#RUN dnf update -y && dnf install -y git && dnf clean all
 
-FROM registry.access.redhat.com/ubi8/ubi-minimal
+#FROM registry.access.redhat.com/ubi8/ubi-minimal
+#RUN microdnf update -y && microdnf install -y git && microdnf clean all
+#COPY --from=UBI /bin/bash /bin/bash
+#CMD /bin/bash
+
+FROM registry.access.redhat.com/ubi8/ubi-minimal AS minimal
 RUN microdnf update -y && microdnf install -y git && microdnf clean all
-COPY --from=UBI /bin/bash /bin/bash
+
+FROM registry.access.redhat.com/ubi8/ubi
+RUN dnf update -y && dnf install -y git && dnf clean all
+COPY --from=minimal /bin/bash /bin/bash
 CMD /bin/bash
