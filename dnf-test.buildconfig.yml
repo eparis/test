@@ -2,7 +2,7 @@ kind: BuildConfig
 apiVersion: build.openshift.io/v1
 metadata:
   annotations:
-    app.openshift.io/vcs-ref: main
+    app.openshift.io/vcs-ref: master
     app.openshift.io/vcs-uri: 'https://github.com/eparis/test.git'
   name: dnf-test
   labels:
@@ -23,7 +23,7 @@ spec:
     type: Git
     git:
       uri: 'https://github.com/eparis/test.git'
-      ref: main
+      ref: master
     contextDir: /
   triggers:
     - type: ConfigChange
