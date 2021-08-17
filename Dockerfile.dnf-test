@@ -1,9 +1,8 @@
 FROM registry.access.redhat.com/ubi8/ubi AS UBI
-RUN dnf install -y nginx
-RUN dnf install -y mysql
 RUN dnf update -y && dnf clean all
 
 FROM registry.access.redhat.com/ubi8/ubi-minimal
+RUN ls /etc/pki/entitlement/
 RUN microdnf update -y && microdnf clean all
 COPY --from=UBI /bin/bash /bin/bash
 CMD /bin/bash
